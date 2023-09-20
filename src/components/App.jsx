@@ -1,16 +1,16 @@
+import { PhoneForm } from './Phonebook/PhoneForm';
+import { FormList } from './Phonebook/FormList.jsx';
+import { ContactFilter } from './Phonebook/ContactFilter';
+import { Layout } from './Layout/Layout';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <Layout>
+      <div>
+        <PhoneForm />
+        {/* <ContactFilter /> */}
+        <FormList />
+      </div>
+    </Layout>
   );
 };
