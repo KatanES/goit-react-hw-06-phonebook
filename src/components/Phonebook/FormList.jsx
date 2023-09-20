@@ -3,7 +3,7 @@ import { ContactFilter } from './ContactFilter';
 import { getFilteredContacts } from 'redux/selectors';
 import { deleteContact, resetDeletedContacts } from 'redux/contactsSlice';
 
-export const FormList = ({}) => {
+export const FormList = () => {
   const filteredContacts = useSelector(getFilteredContacts);
   console.log(filteredContacts);
   const dispatch = useDispatch();
